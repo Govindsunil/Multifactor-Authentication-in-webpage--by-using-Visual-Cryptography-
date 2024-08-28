@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>myproject</title>
+    <title>miniproject</title>
     <link rel="stylesheet" href="index.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -11,7 +11,6 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <!-- hei friends -->
     <style>
       input[type="submit"] {
         background: #fff;
@@ -32,11 +31,20 @@
     <!-- NAVBAR CREATION -->
     <header class="header">
       <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Help</a>
+        <a href="http://localhost/myproject/project/index.html">Home</a>
+        <a
+          href="https://media.kasperskydaily.com/wp-content/uploads/sites/85/2021/11/15135955/Cybersecurity-Portfolio-for-Business-Catalogue-1.pdf"
+          >Portfolio</a
+        >
+        <a href="https://en.m.wikipedia.org/wiki/Login">About</a>
+        <a
+          href="https://instagram.com/secure_login_help000?igshid=NGExMmI2YTkyZg=="
+          >Contact</a
+        >
+        <a
+          href="https://www.synopsys.com/blogs/software-security/cryptography-best-practices/"
+          >Help</a
+        >
         <button class="btnLogin-popup">Login</button>
       </nav>
       <form action="" class="search-bar">
@@ -49,16 +57,31 @@
     <div class="container">
       <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
       <div class="item">
-        <h2 class="logo"><i class="bx bxl-xing"></i>Mini Project</h2>
+        <h2 class="logo"><i class=""></i></h2>
         <div class="text-item">
-          <h2>Welcome! <br /><span> To Our Project </span></h2>
+          <h2 class="logo">
+            <i class="bx bxl-xing"></i>SECURE BRIDGE<br /><span> </span>
+          </h2>
           <p>Luck runs out but safety is good for life.</p>
           <div class="social-icon">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100090273852728&mibextid=ZbWKwL"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://twitter.com/cyber_log89?t=4QnMrmhs1Ypssb3lckkwWg&s=08 "
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://youtube.com/@secure_login_help"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              href="https://instagram.com/secure_login_help000?igshid=NGExMmI2YTkyZg=="
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/bethin-biju-8836681bb"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -94,15 +117,11 @@
 
                 <h1>Upload your shares</h1>
                 <!-- <p>Upload your two shares below:</p> -->
-                <input type="file" id="share1" accept="image/*" />
+                <!-- <input type="file" id="share1" accept="image/*" /> -->
 
-                <input type="file" id="share2" accept="image/*" />
+                <input type="file" id="share2" name="share2" accept="image/*" />
 
-                <input
-                  type="button"
-                  onclick="decryptMessage()"
-                  value="Upload the image"
-                />
+                <input type="submit" value="Upload the image" />
 
                 <!-- <label for="message">Result:</label> -->
                 <div id="message"></div>
@@ -162,21 +181,14 @@
                 <div>
                   <input type="submit" value="Split into Share" />
 
-                  <div id="share1">
-                    <?php if (isset($share1Image)) : ?>
-                    <img
-                      src="data:image/png;base64,<?php echo base64_encode($share1Image); ?>"
-                      alt="Share 1"
-                    />
-                    <?php endif; ?>
-                  </div>
-                  <a
-                    id="download1"
-                    href="<?php echo isset($share1DownloadUrl) ? $share1DownloadUrl : ''; ?>"
-                    download="share1.png"
-                    class="download-button"
-                    >Download Share 1</a
-                  >
+                  <!--  <div id="share1">
+              <?php if (isset($share1Image)) : ?>
+                <img src="data:image/png;base64,<?php echo base64_encode($share1Image); ?>" alt="Share 1" />
+              <?php endif; ?>
+            </div>
+            <a id="download1" href="<?php echo isset($share1DownloadUrl) ? $share1DownloadUrl : ''; ?>" download="share1.png" class="download-button">Download Share 1</a> -->
+                  <br />
+                  <br />
 
                   <div id="share2">
                     <?php if (isset($share2Image)) : ?>
